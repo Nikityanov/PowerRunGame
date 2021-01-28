@@ -150,11 +150,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fff71016d76962541959df2d4ee14528, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RoadPrefab: {fileID: 4816016639718421502, guid: bb07d69b396d8c14983e382f404ddc83,
-    type: 3}
-  maxSpeed: 20
-  maxRoadCount: 5
   player: {fileID: 1677125981}
+  pm: {fileID: 1677125989}
+  rps:
+  - {fileID: 4816016639718421502, guid: bb07d69b396d8c14983e382f404ddc83, type: 3}
+  - {fileID: 6030510773460484590, guid: a7d317b04a8c8394ba12c84f5ab68802, type: 3}
+  maxRoadCount: 5
+  maxSpeed: 20
+  speed: 0
+  accelerationCoefficient: 0.2
+  currentSpeed: 0
 --- !u!4 &26957712
 Transform:
   m_ObjectHideFlags: 0
@@ -1254,7 +1259,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh14234
+  m_Name: pb_Mesh14262
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1931,7 +1936,7 @@ MeshCollider:
   m_GameObject: {fileID: 1677125981}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 1
   m_CookingOptions: 30
@@ -2280,6 +2285,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rg: {fileID: 26957711}
   coinsCounter: {fileID: 1714178029}
+  coinsCount: 0
   sm: {fileID: 132469077}
 --- !u!1 &1714178027
 GameObject:

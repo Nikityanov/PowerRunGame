@@ -7,17 +7,17 @@ public class PlayerManager : MonoBehaviour
 {
     public RoadGenerator rg;
     public Text coinsCounter;
-    int coinsCount = 0;
+    public int coinsCount = 0;
     public SwipeManager sm;
 
     private void OnTriggerEnter(Collider other)
     {
-      if (other.gameObject.tag == "Coin")
+     if (other.gameObject.tag == "Coin")
         {
             Destroy(other.gameObject);
             coinsCount += 1;
-            string Counter = coinsCount.ToString();
-            coinsCounter.text = Counter;
+            coinsCounter.text = coinsCount.ToString();
+            Debug.Log(coinsCount);
         }
         if (other.gameObject.tag == "obstacle")
         {
