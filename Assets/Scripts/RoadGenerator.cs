@@ -15,10 +15,12 @@ public class RoadGenerator : MonoBehaviour
     public float speed = 0;
     public float accelerationCoefficient = 0.2f;
     public float currentSpeed;
-    
-    
-    
-    
+
+    public Animator ac;
+
+
+
+
     void Start()
     {
         ResetLevel();
@@ -62,15 +64,17 @@ public class RoadGenerator : MonoBehaviour
     {
         speed = 10;
         SwipeManager.instance.enabled = true;
+        ac.SetBool("GameStarted", true);
     }
 
     public void ResumeLevel()
     {
-        speed = currentSpeed;
+                speed = currentSpeed;
         SwipeManager.instance.enabled = false;
     }
     public void PauseLevel()
     {
+        ac.SetBool("GameStarted", false);
         currentSpeed = speed;
         speed = 0;
         SwipeManager.instance.enabled = false;

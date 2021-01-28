@@ -17,6 +17,8 @@ public class SwipeManager : MonoBehaviour
     public bool isGrounded = true;
     public Rigidbody heroRB;
 
+     public Animator ac;
+
     
     public enum Direction { Left, Right, Up, Down};
 
@@ -111,6 +113,7 @@ public class SwipeManager : MonoBehaviour
             
                 heroRB.AddForce(jump * jumpForce, ForceMode.Impulse);
                 isGrounded = false;
+                ac.SetTrigger("Jumping");
                 Debug.Log("Jump");
             
         }
