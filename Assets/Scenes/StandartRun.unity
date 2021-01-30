@@ -259,6 +259,7 @@ GameObject:
   m_Component:
   - component: {fileID: 132469078}
   - component: {fileID: 132469077}
+  - component: {fileID: 132469079}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -299,6 +300,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &132469079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 132469076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fdb7e2789be8b441aa420775b6a6138, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &155269545
 GameObject:
   m_ObjectHideFlags: 0
@@ -1858,15 +1871,15 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 26957711}
-        m_MethodName: QuitGame
-        m_Mode: 1
+      - m_Target: {fileID: 132469079}
+        m_MethodName: ChangeScene
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Start Screen
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1323547268
@@ -2611,10 +2624,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 83
+    m_FontSize: 60
     m_FontStyle: 1
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 0
     m_MaxSize: 94
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -2622,7 +2635,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Exit Game
+  m_Text: "\u0412\u044B\u0439\u0442\u0438 \u0432 \u0433\u043B\u0430\u0432\u043D\u043E\u0435
+    \u043C\u0435\u043D\u044E"
 --- !u!222 &1985141136
 CanvasRenderer:
   m_ObjectHideFlags: 0
