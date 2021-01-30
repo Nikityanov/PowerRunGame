@@ -823,6 +823,7 @@ MonoBehaviour:
   runButton: {fileID: 1422675790}
   metersText: {fileID: 837126060}
   speedText: {fileID: 1130131372}
+  anim: {fileID: 1227534616}
 --- !u!95 &1227534616
 Animator:
   serializedVersion: 3
@@ -833,7 +834,7 @@ Animator:
   m_GameObject: {fileID: 1227534614}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2ee0f0ab3b953a44d9b22ecc7dba346f, type: 2}
+  m_Controller: {fileID: 9100000, guid: 14ada1d40ccf25b4abcb751bdc463072, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1113,7 +1114,6 @@ GameObject:
   - component: {fileID: 1710958210}
   - component: {fileID: 1710958209}
   - component: {fileID: 1710958208}
-  - component: {fileID: 1710958207}
   - component: {fileID: 1710958206}
   - component: {fileID: 1710958205}
   - component: {fileID: 1710958204}
@@ -1154,20 +1154,6 @@ Rigidbody:
   m_Constraints: 114
   m_CollisionDetection: 0
 --- !u!136 &1710958206
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1710958203}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!136 &1710958207
 CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
