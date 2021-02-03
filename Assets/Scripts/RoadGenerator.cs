@@ -18,6 +18,8 @@ public class RoadGenerator : MonoBehaviour
 
     public Animator ac;
 
+    public PlayerMovement playerMovement;
+
 
 
 
@@ -57,7 +59,6 @@ public class RoadGenerator : MonoBehaviour
        GameObject go = Instantiate(rps[tileIndex], pos, Quaternion.identity);
         go.transform.SetParent(transform);
         roads.Add(go);
-        Debug.Log("I create road #" + tileIndex);
     }
 
     public void StartLevel()
@@ -81,6 +82,7 @@ public class RoadGenerator : MonoBehaviour
     }
     public void ResetLevel()
     {
+        playerMovement.targetRow = 1;
         speed = 0;
         while(roads.Count > 0)
         {

@@ -8,7 +8,7 @@ public class PlayerManager : MonoBehaviour
     public RoadGenerator rg;
     public Text coinsCounter;
     public int coinsCount = 0;
-    public SwipeManager sm;
+    public PlayerMovement pm;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -17,12 +17,10 @@ public class PlayerManager : MonoBehaviour
             Destroy(other.gameObject);
             coinsCount += 1;
             coinsCounter.text = coinsCount.ToString();
-            Debug.Log(coinsCount);
         }
         if (other.gameObject.tag == "obstacle")
         {
             rg.PauseLevel();
-            Debug.Log("You Die");
             coinsCounter.text = "You Die";
         }
     }
@@ -30,7 +28,7 @@ public class PlayerManager : MonoBehaviour
     {
         if (collision.gameObject.tag == "Floor")
         {
-            sm.isGrounded = true;
+            pm.isGrounded = true;
         }
     }
 }

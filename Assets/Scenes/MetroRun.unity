@@ -819,7 +819,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1227534614}
-  speed: 1
+  speed: 2
   runButton: {fileID: 1422675790}
   metersText: {fileID: 837126060}
   speedText: {fileID: 1130131372}
