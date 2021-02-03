@@ -66,7 +66,9 @@ public class SwipeManager : MonoBehaviour
                 swipe[(int)Direction.Down] = swipeDelta.y < 0;
                 swipe[(int)Direction.Up] = swipeDelta.y > 0;
             }
+            
         }
+
     }
 
     void SendSwipe()
@@ -78,7 +80,7 @@ public class SwipeManager : MonoBehaviour
 
 
 
-    private void Reset()
+    public void Reset()
     {
 
         startTouch = swipeDelta = Vector2.zero;

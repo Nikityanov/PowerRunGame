@@ -24,11 +24,13 @@ public class PlayerMovement : MonoBehaviour
         if (sm.swipe[0] && targetRow > 0)
         {
             targetRow--;
+            sm.Reset();
         }
 
         if (sm.swipe[1] && targetRow < rows.Length - 1)
         {
             targetRow++;
+            sm.Reset();
         }
         if (sm.swipe[2] && isGrounded == true)
         {
